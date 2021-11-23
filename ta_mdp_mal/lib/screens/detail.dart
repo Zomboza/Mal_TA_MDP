@@ -95,25 +95,6 @@ class _DetailPageState extends State<DetailPage> {
                   ),
                 ],
               );
-            // return Center(
-            //   child: ListView.separated(
-            //     padding: const EdgeInsets.all(8),
-            //     itemCount: snapshot.data!.length,
-            //     itemBuilder: (BuildContext context, int index) {
-            //       return ListTile(
-            //         leading: CircleAvatar(
-            //             backgroundColor: Color.fromRGBO(253, 1, 40, 1),
-            //             child: Text(
-            //               '${snapshot.data![index].episodeId}',
-            //               style: TextStyle(color: Colors.white),
-            //             )),
-            //         title: Text(snapshot.data![index].title),
-            //       );
-            //     },
-            //     separatorBuilder: (BuildContext context, int index) =>
-            //         const Divider(),
-            //   ),
-            // );
           } else if (snapshot.hasError) {
             return const Center(child: Text('Something went wrong :('));
           }

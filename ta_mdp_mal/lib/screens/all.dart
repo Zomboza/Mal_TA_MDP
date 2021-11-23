@@ -27,9 +27,7 @@ class _AnimePageState extends State<AnimePage> {
     return Scaffold(
             appBar: AppBar(
         elevation: 10,
-        // shape: RoundedRectangleBorder(
-        //     borderRadius:
-        //         BorderRadius.vertical(bottom: Radius.elliptical(50, 50))),
+
         title: Text(
           'Top All Anime',
           style: GoogleFonts.roboto(
@@ -42,16 +40,6 @@ class _AnimePageState extends State<AnimePage> {
       body: Column(
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
-          // Container(
-          //   margin: EdgeInsets.all(10),
-          //   child: Text(
-          //     'Top Anime All Time',
-          //     style: GoogleFonts.nunito(
-          //         fontSize: 20,
-          //         fontWeight: FontWeight.bold,
-          //         color: Color.fromRGBO(253, 1, 40, 1)),
-          //   ),
-          // ),
           Expanded(
             child: FutureBuilder(
               builder: (context, AsyncSnapshot<List<Show>> snapshot) {
@@ -70,11 +58,9 @@ class _AnimePageState extends State<AnimePage> {
                             child: ListTile(
                               contentPadding: const EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
-                              leading: CircleAvatar(
-                                radius: 30,
-                                backgroundImage: NetworkImage(
-                                    snapshot.data![index].imageUrl),
-                              ),
+                              leading: 
+                                 Image.network(snapshot.data![index].imageUrl),
+                              
                               title: Text(
                                 snapshot.data![index].title,
                                 style: GoogleFonts.nunito(
