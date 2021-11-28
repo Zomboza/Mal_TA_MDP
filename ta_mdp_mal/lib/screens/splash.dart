@@ -43,13 +43,13 @@ class SplashState extends State<SplashPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            // Image.asset(
-            //   "images/splash.png",
-            //   width: 300,
-            //   height: 300,
-            // ),
+             Image.asset(
+               "images/heh.png",
+               width: 300,
+               height: 300,
+             ),
             Padding(
-              padding: const EdgeInsets.only(top: 150),
+              padding: const EdgeInsets.only(top: 10),
               child: Text("Definitely Tidak Copas",
                   style: GoogleFonts.roboto(
                     textStyle: TextStyle(color: Colors.lightBlue),

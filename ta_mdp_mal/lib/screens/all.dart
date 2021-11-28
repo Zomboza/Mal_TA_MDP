@@ -59,8 +59,9 @@ class _AnimePageState extends State<AnimePage> {
                               contentPadding: const EdgeInsets.symmetric(
                                   horizontal: 20, vertical: 10),
                               leading: 
-                                 Image.network(snapshot.data![index].imageUrl),
-                              
+                                 Container(
+                                   width:70,
+                                   child: Image.network(snapshot.data![index].imageUrl,fit:BoxFit.cover,)),
                               title: Text(
                                 snapshot.data![index].title,
                                 style: GoogleFonts.nunito(

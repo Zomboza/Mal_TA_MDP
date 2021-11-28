@@ -29,15 +29,12 @@ class _AboutPageState extends State<AboutPage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            // Padding(
-            //     padding: const EdgeInsets.only(bottom: 100),
-            //     child: Image.asset(
-            //       //"images/about.png",
-            //       width: 250,
-            //       height: 250,
-            //     )),
+            CircleAvatar(
+                 radius: 100,
+                 backgroundImage: AssetImage("images/about.jpg")
+                 ),
             Padding(
-              padding: const EdgeInsets.only(bottom: 20),
+              padding: const EdgeInsets.only(bottom: 20, top: 20),
               child: Text(
                 'Definitely Tidak Copas',
                 style: GoogleFonts.roboto(
